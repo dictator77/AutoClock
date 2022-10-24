@@ -98,11 +98,14 @@ class AutoDaka:
 
         time.sleep(2)  # 等待位置信息
         # 需要提交的表单
-        forms = {'inSchool': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[4]/div/div/div[1]/span[1]', # on campus 
-                 'roomMate': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[7]/div/div/div[2]/span[1]',  # people living with you
-                 'inPractice': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[8]/div/div/div[3]/span[1]', # internship 
-                 'location': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[11]/div/input', # location
-                 'commit': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[28]/div/div/div/span[1]', # commit 
+        forms = {'inSchool': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[4]/div/div/div[2]/span[1]', # on campus 
+                 'inChina': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[6]/div/div/div[2]/span[1]',  # people living with you
+                 'notFever': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[7]/div/div/div[2]/span[1]',  #not fever
+                 'notLeave': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[8]/div/div/div[4]/span[1]'  #not leave HangZhou
+                 'inPractice': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[9]/div/div/div[3]/span[1]', # internship 
+                 'location': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[12]/div/input', # location
+                 'control_measure': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[27]/div/div/div[2]/span[1]'
+                 'commit': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[29]/div/div/div/span[1]', # commit 
                  }
 
         for form in forms:
@@ -161,8 +164,8 @@ def get_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('--username', default=user_name, help='浙江大学统一身份认证平台用户名')
     parser.add_argument('--password', default=password, help='浙江大学统一身份认证平台密码')
-    parser.add_argument('--latitude', type=float ,default=30.27, help='虚拟地理位置纬度, 默认为杭州市西湖区浙江大学')
-    parser.add_argument('--longitude', type=float, default=120.13, help='虚拟地理位置经度')
+    parser.add_argument('--latitude', type=float ,default=30.20, help='虚拟地理位置纬度, 默认为杭州滨江')
+    parser.add_argument('--longitude', type=float, default=120.18, help='虚拟地理位置经度')
     parser.add_argument('--accuracy', default=50, help='虚拟地理位置精度')
     parser.add_argument('--url', type=str, default=url, help='浙江大学统一身份认证平台地址')
     parser.add_argument('--headless', type=bool, default=True, help='是否开启无头模式')
