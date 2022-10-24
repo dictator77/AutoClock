@@ -101,10 +101,10 @@ class AutoDaka:
         forms = {'inSchool': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[4]/div/div/div[2]/span[1]', # on campus 
                  'inChina': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[6]/div/div/div[2]/span[1]',  # people living with you
                  'notFever': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[7]/div/div/div[2]/span[1]',  #not fever
-                 'notLeave': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[8]/div/div/div[4]/span[1]'  #not leave HangZhou
+                 'notLeave': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[8]/div/div/div[4]/span[1]',  #not leave HangZhou
                  'inPractice': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[9]/div/div/div[3]/span[1]', # internship 
                  'location': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[12]/div/input', # location
-                 'control_measure': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[27]/div/div/div[2]/span[1]'
+                 'control_measure': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[27]/div/div/div[2]/span[1]',
                  'commit': '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[29]/div/div/div/span[1]', # commit 
                  }
 
